@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Exact Age Calculator</title>
+	<link rel='stylesheet' href='css.css'/>
+   
+	<script src='script.js'></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter"><h4>AGE CALCULATOR</h4></div>
+                <div class="block">
+                    <p class="title">Date</p>
+                    <input
+                        type="text"
+                        name="date"
+                        id="date"
+                        placeholder="dd"
+                        required="required"
+                        minlength="1"
+                        maxlength="2">
+                </input>
+                </div>
+                <div class="block">
+                    <p class="title">Month</p>
+                    <input
+                        type="text"
+                        name="month"
+                        id="month"
+                        placeholder="mm"
+                        required="required"
+                        minlength="1"
+                        maxlength="2">
+                </input>
+                </div>
+                <div class="block">
+                    <p class="title">Year</p>
+                    <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4"></input>
+                    
+                </div>
+            </div>
+            <div class="base">
+                <div class="enter">
+                    <input type="button" name="submit" value="Submit" onclick="age()"> </input>
+                </div>
+            </div>
+            <div id="age"></div>
+        </form>
+    </div>
+</body>
+</html>
